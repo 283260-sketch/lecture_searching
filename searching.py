@@ -62,6 +62,39 @@ def binary_search(seznam, hledane_cislo):
         else:
             pravy = stred - 1
     return None
+# čas
+# import time
+# import matplotlib.pyplot as plt
+# from generators import unordered_sequence
+#
+# sizes = [100, 500, 1000, 5000, 10000]
+# times = [0.00001, 0.00003, 0.00006, 0.00031, 0.00067]
+# times_seq = []
+# times_bin = []
+# times_set = []
+
+# for n in sizes:
+#     data_list = sorted(unordered_sequence(n))
+#     data_set = set(data_list)
+#     target = -1
+#
+#     start = time.perf_counter()
+#     for _ in range(repetitions):
+#         sequential_search(data_list, target)
+#     end = time.perf_counter()
+#     times_seq.append((end - start) / repetitions)
+#
+#     start = time.perf_counter()
+#     for _ in range(repetitions):
+#         binary_search(data_list, target)
+#     end = time.perf_counter()
+#     times_bin.append((end - start) / repetitions)
+#
+#     start = time.perf_counter()
+#     for _ in range(repetitions):
+#         target in data_set
+#     end = time.perf_counter()
+#     times_set.append((end - start) / repetitions)
 
 
 def main():
